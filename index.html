@@ -1,13 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
+    <title>Las Cascadas de Villa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
-<body>
-    ## AGREGE TAL TAL, ESTO SIRVE PARA EL TAL
 
-    
+<body>
+
+    <header class="header">
+        <a href="index.html">
+            <img src="./img/Logo.png" alt="Logo Las Cascadas de Villa" class="logo">
+        </a>
+        <!-- cod para el menu hamburguesa -->
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav id="menu">
+            <ul class="menu-izquierda">
+                <li><a href="carta.html" class="nav-link">NUESTRA CARTA</a></li>
+                <li><a href="promociones.html" class="nav-link">PROMOCIONES</a></li>
+                <li class="telefono">(01) 2784896</li>
+            </ul>
+            <ul class="menu-derecha">
+                <li><a href="reservar.html" class="reserva">RESERVA ONLINE</a></li>
+                <li><a href="ordenar.html" class="ordenar">ORDENA AQUÍ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="carrusel">
+        <div class="carrusel-contenedor">
+            <img src="./img/banner.jpg" class="carrusel-img" alt="Imagen 1">
+            <img src="./img/banner2.jpg" class="carrusel-img" alt="Imagen 2">
+            <img src="./img/banner3.jpg" class="carrusel-img" alt="Imagen 3">
+        </div>
+
+    </section>
+
+    <section class="bienvenida">
+        <div class="bienvenida-contenedor">
+            <div class="bienvenida-texto izquierda">
+                <h2>BIENVENIDOS A <br><span>“LAS CASCADAS DE VILLA”</span></h2>
+                <a href="nosotros.html" class="btn-amarillo">QUIENES SOMOS</a>
+            </div>
+            <div class="bienvenida-texto derecha">
+                <p>
+                    Nos especializamos en ofrecer lo mejor de la comida peruana tradicional,
+                    con un enfoque especial en nuestro delicioso pollo a la brasa.
+                    Somos una pollería y restaurante familiar que combina sabor casero,
+                    atención cálida y un entorno acogedor para compartir en buena compañía.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="locales-section">
+        <div class="locales-header">
+            <h2><span class="label-local">LOCALES</span> <img src="./img/Logo.png" alt="Logo" /></h2>
+        </div>
+
+        <div class="locales-container">
+            <!-- Local 1 -->
+            <div class="local">
+                <h3>TUPAC</h3>
+                <hr />
+                <p><i class="fab fa-whatsapp"></i> 01 278 4896</p>
+                <p><i class="fas fa-phone"></i> 992 821 692</p>
+                <p class="direccion">Av. Tupac Amaru mz. E5 Lt. 4 - Chorrillos</p>
+            </div>
+
+            <!-- Local 2 -->
+            <div class="local">
+                <h3>MATELLINI</h3>
+                <hr />
+                <p><i class="fab fa-whatsapp"></i> 01 762 9225</p>
+                <p><i class="fas fa-phone"></i> 01 762 9225</p>
+                <p class="direccion">Av. Ariosto Matellini 695 - Chorrillos</p>
+            </div>
+
+            <!-- Local 3 -->
+            <div class="local">
+                <h3>GARDEN-TUPAC</h3>
+                <hr />
+                <p><i class="fab fa-whatsapp"></i> 01 278 4896</p>
+                <p><i class="fas fa-phone"></i> 992 821 692</p>
+                <p class="direccion">Av. 28 de Julio Mz. D Lt 10 Tupac Amaru - Chorrillos</p>
+            </div>
+        </div>
+
+        <div class="locales-horario">
+            <p>Horario de atención : Lunes a Domingo &nbsp; 12:00 pm - 10:30 pm</p>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-top">
+            <div class="left-top">
+                <h2>LAS CASCADAS DE VILLA</h2>
+            </div>
+            <div class="right-top">
+                <p>SÍGUENOS EN:</p>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-tiktok"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-column">
+                <h4>NOSOTROS</h4>
+                <ul>
+                    <li>Visión</li>
+                    <li>Misión</li>
+                    <li>Valores</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>SERVICIOS</h4>
+                <ul>
+                    <li>Nuestra carta</li>
+                    <li>Promociones</li>
+                    <li>Reserva online</li>
+                    <li>Ordena aquí</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CONTACTANOS</h4>
+                <ul>
+                    <li>Locales</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>POLÍTICAS Y TÉRMINOS</h4>
+                <ul>
+                    <li>Términos y condiciones</li>
+                    <li>Políticas de privacidad</li>
+                    <li>Reserva online</li>
+                    <li>Ordena aquí</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-copy">
+            ©Las Cascadas de Villa. Todos los derechos reservados 2025
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
