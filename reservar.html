@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reservar.css" />
+  <title>Document</title>
+</head>
+
+<body>
+
+  <main class="container">
+    <h1>Reserva tu experiencia</h1>
+
+    <!-- Paso 1: Preferencia de Servicio -->
+    <section class="step">
+      <h2>1. Elige el tipo de servicio</h2>
+      <div class="options">
+        <label><input type="radio" name="servicio" value="almuerzo" checked> Almuerzo</label>
+        <label><input type="radio" name="servicio" value="cena"> Cena</label>
+      </div>
+    </section>
+
+    <!-- Paso 2: Selección de horario -->
+    <section class="step">
+      <h2>2. Selecciona tu horario</h2>
+      <div class="date-navigation">
+        <button onclick="cambiarDia(-1)">← Día anterior</button>
+        <span id="fechaActual">Hoy</span>
+        <button onclick="cambiarDia(1)">Día siguiente →</button>
+      </div>
+      <div class="horarios" id="horarios">
+        <!-- Horarios dinámicos -->
+      </div>
+    </section>
+
+    <!-- Paso 3: Formulario de Registro -->
+    <section class="step">
+      <h2>3. Datos del cliente</h2>
+      <form id="reservaForm">
+        <div class="form-group">
+          <input type="text" name="nombre" placeholder="Nombres" required />
+          <input type="text" name="apellido" placeholder="Apellidos" required />
+        </div>
+        <div class="form-group">
+          <input type="tel" name="telefono" placeholder="Teléfono" required />
+          <input type="email" name="correo" placeholder="Correo electrónico" required />
+        </div>
+        <div class="form-group">
+          <input type="text" name="distrito" placeholder="Distrito" required />
+          <select name="local" required>
+            <option value="">Selecciona un local</option>
+            <option value="tupac">Túpac</option>
+            <option value="matellini">Matellini</option>
+            <option value="garden-tupac">Garden Túpac</option>
+          </select>
+        </div>
+        <textarea name="comentarios" placeholder="Comentarios adicionales (opcional)"></textarea>
+        <div class="form-buttons">
+          <button type="reset">Cancelar</button>
+          <button type="submit">Reservar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script src="./js/script.js"></script>
+
+
+</body>
+
+</html>

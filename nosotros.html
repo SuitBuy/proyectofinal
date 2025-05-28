@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SOBRE NOSOTROS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/nosotros.css">
+</head>
+
+<body>
+    <script src="./js/script.js"></script>
+    <header class="encabezado">
+        <a href="index.html">
+            <img src="./img/Logo.png" alt="Logo Las Cascadas de Villa" class="logo">
+        </a>
+        <!-- Botón hamburguesa -->
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav id="menu">
+            <ul class="menu-izquierda">
+                <li><a href="carta.html" class="nav-link">NUESTRA CARTA</a></li>
+                <li><a href="promociones.html" class="nav-link">PROMOCIONES</a></li>
+                <li class="telefono">(01) 2784896</li>
+            </ul>
+            <ul class="menu-derecha">
+                <li><button class="reserva">RESERVA ONLINE</button></li>
+                <li><button class="ordenar">ORDENA AQUÍ</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Bienvenida con imagen de fondo -->
+    <section class="section-imagen">
+        <div class="opacidad"><!-- NUEVO: Capa de opacidad -->
+            <div class="section-text">
+                <h1>Las Cascadas de Villa</h1>
+                <p>-Tradición, sabor y pasión por la buena comida-</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sección Misión -->
+    <section class="mision-vision">
+        <div class="content">
+            <div class="image-container">
+                <img src="./img/mision.jpeg" alt="Interior restaurante - misión">
+            </div>
+            <div class="text-content">
+                <h2>MISIÓN</h2>
+                <span class="underline"></span>
+                <p>
+                    “Brindar a nuestros clientes una experiencia gastronómica única, basada en la autenticidad de la
+                    cocina
+                    peruana, con especialidad en pollo a la brasa, parrillas y platos tradicionales, preparados con
+                    ingredientes de calidad y atención personalizada, en un ambiente familiar, acogedor y natural.”
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Sección Visión -->
+    <section class="mision-vision">
+        <div class="content">
+            <div class="text-content">
+                <h2>VISIÓN</h2>
+                <span class="underline"></span>
+                <p>
+                    “Convertirnos en uno de los restaurantes más reconocidos de Lima Sur destacando por nuestra
+                    excelencia
+                    en sabor, servicio y calidez, expandiendo nuestra propuesta culinaria sin perder la esencia de lo
+                    tradicional.”
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="./img/vision.jpeg" alt="Fachada restaurante - visión">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>NUESTROS VALORES</h2>
+        <div class="valores-container">
+            <div class="valor active" id="valores-1">
+                <div class="valor-box">
+                    <img src="./img/valores1.jpg" alt="Pasión por el Sabor">
+                    <h4>Pasión por el Sabor</h4>
+                    <p>Vivimos para brindar experiencias únicas
+                        a través de nuestros platos. Cada preparación
+                        está hecha con dedicación y amor por la cocina.</p>
+                </div>
+                <div class="valor-box">
+                    <img src="./img/valores2.jpg" alt="Compromiso con la Familia">
+                    <h4>Compromiso con la Familia</h4>
+                    <p>Somos un lugar donde las familias se reúnen.
+                        Nos esforzamos por ofrecer un ambiente
+                        cálido, seguro y acogedor para todos.</p>
+                </div>
+            </div>
+            <div class="valor" id="valores-2">
+                <div class="valor-box">
+                    <img src="./img/valores3.jpg" alt="Respeto al cliente">
+                    <h4>Respeto al Cliente</h4>
+                    <p>Valoramos y escuchamos a nuestros clientes para ofrecerles el mejor servicio.</p>
+                </div>
+                <div class="valor-box">
+                    <img src="./img/valores4.jpg" alt="Trabajo en Equipo">
+                    <h4>Trabajo en Equipo</h4>
+                    <p>Fomentamos un entorno colaborativo que impulsa el éxito colectivo.</p>
+                </div>
+            </div>
+            <div class="dots">
+                <span class="dot active" onclick="mostrarValores(1)"></span>
+                <span class="dot" onclick="mostrarValores(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="left-top">
+                <h2>LAS CASCADAS DE VILLA</h2>
+            </div>
+            <div class="right-top">
+                <p>SÍGUENOS EN:</p>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-tiktok"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-column">
+                <h4>NOSOTROS</h4>
+                <ul>
+                    <li>Visión</li>
+                    <li>Misión</li>
+                    <li>Valores</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>SERVICIOS</h4>
+                <ul>
+                    <li>Nuestra carta</li>
+                    <li>Promociones</li>
+                    <li>Reserva online</li>
+                    <li>Ordena aquí</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CONTACTANOS</h4>
+                <ul>
+                    <li>Locales</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>POLÍTICAS Y TÉRMINOS</h4>
+                <ul>
+                    <li>Términos y condiciones</li>
+                    <li>Políticas de privacidad</li>
+                    <li>Reserva online</li>
+                    <li>Ordena aquí</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-copy">
+            ©Las Cascadas de Villa. Todos los derechos reservados 2025
+        </div>
+    </footer>
+</body>
+
+</html>

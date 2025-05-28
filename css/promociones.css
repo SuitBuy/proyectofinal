@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Cuprum:ital,wght@0,400..700;1,400..700&family=Fresca&family=Happy+Monkey&display=swap');
+
+
+/* Estilo general del header */
+/* GENERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Fresca';
+    padding: 0px;
+    line-height: 1.6;
+    background-color: #fefefe;
+    color: #222;
+    overflow-x: hidden;
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c40000;
+    color: white;
+    padding: 16px 24px;
+    position: relative;
+}
+
+.logo {
+    height: 85px;
+    /*transform: translate(20px);*/
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.menu-izquierda,
+.menu-derecha {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #121211;
+    border-bottom: 5px solid #121211;
+    padding-bottom: 4px;
+}
+
+
+.telefono {
+    font-weight: bold;
+    font-family: "Coda";
+    font-size: 25px;
+    padding-left: 16px;
+    margin-left: 16px;
+    border-left: 2px solid white;
+}
+
+/* Botones */
+.reserva,
+.ordenar {
+    font-family: 'Coda';
+    font-weight: bold;
+    background-color: #fcd200;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.reserva:hover,
+.ordenar:hover {
+    color: white;
+    background-color: #121211;
+}
+
+
+/* MENÚ HAMBURGUESA */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+
+
+/*estilos para la seccion promociones*/
+
+.section-figura {
+    position: relative;
+    background-image: url('nosotros.png');
+    /* Reemplazar con imagen real */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-opacidad::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(175, 164, 164, 0.392);
+}
+
+.section-text h1 {
+    font-family: 'Coda';
+    position: relative;
+    color: rgba(91, 21, 21, 1);
+    font-size: 3rem;
+    z-index: 1;
+}
+
+.promos-section {
+    padding: 40px 20px;
+    background-color: #fdf6ec;
+    /* Color cremita */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    /* Espaciado lateral siempre presente */
+    box-sizing: border-box;
+}
+
+.promo-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: calc(50% - 20px);
+    min-width: 450px;
+    max-width: 600px;
+    height: 180px;
+}
+
+.promo-card img {
+    width: 180px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.promo-content {
+    font-family: 'Cuprum';
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.promo-titulo {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.promo-precio {
+    color: #111010;
+    font-weight: bold;
+    float: right;
+    font-size:x-large;
+}
+
+.promo-description {
+    margin: 10px 0;
+    font-size: 0.95rem;
+}
+
+.promo-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promo-actions button {
+    background: #d62828;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+}
+
+ .promo-actions button span {
+      order: 1;
+    }
+
+    .promo-actions button i {
+      order: 2;
+    }
+
+.promo-actions a {
+    font-size: 0.8rem;
+    color: #555;
+    text-decoration: underline;
+}
+
+/*responsividad para el FOOTER*/
+footer {
+    font-family: 'Cuprum';
+    color: white;
+    background-color: #0d0000;
+}
+
+/* Parte superior del footer */
+.footer-top {
+    background-color: #c40000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+}
+
+.left-top h2 {
+    margin: 0;
+    font-family: 'Cuprum', monospace;
+    font-weight: bold;
+    color: white;
+}
+
+.left-top p {
+    margin: 0;
+    font-family: 'Cuprum', monospace;
+    font-weight: bold;
+    color: white;
+}
+
+.right-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+}
+
+/* Parte inferior con columnas */
+.footer-bottom {
+    font-family: 'Cuprum';
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 30px 20px;
+    background-color: #1f1d1d;
+    border-bottom: 2px solid white;
+}
+
+.footer-column {
+    width: 200px;
+}
+
+.footer-column h4 {
+    display: inline-block;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 8px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.footer-copy {
+    text-align: center;
+    padding: 15px;
+    background-color: #0d0000;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .encabezado,
+    .bienvenida,
+    .locales-section {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+
+
+    .menu-toggle {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .menu-toggle span {
+        height: 3px;
+        width: 25px;
+        background: white;
+        border-radius: 2px;
+        transition: 0.3s ease;
+    }
+
+
+    .menu-toggle {
+        display: flex;
+        position: absolute;
+        top: 25px;
+        right: 24px;
+        z-index: 1001;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        overflow: hidden;
+        max-height: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        transition: max-height 0.4s ease-in-out, background-color 0.3s ease;
+        background-color: rgb(168, 27, 27);
+        /* Por defecto transparente */
+    }
+
+    nav.activo {
+        display: flex;
+        background-color: #b70c0c;
+        /*color del menu desplegadp*/
+        color: white;
+        max-height: 500px;
+    }
+
+    .menu-izquierda,
+    .menu-derecha {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 16px;
+        margin-top: 10px;
+    }
+
+    .menu-izquierda li,
+    .menu-derecha li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-derecha button {
+        width: 70%;
+        max-width: 200px;
+        padding: 8px 12px;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+
+    .telefono {
+        border-left: none;
+        padding-left: 0;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .menu-toggle.activo span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.activo span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.activo span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /*responsividad para el footer*/
+    footer {
+        text-align: center;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .right-top {
+        align-items: flex-start;
+    }
+
+    .social-icons {
+        gap: 10px;
+        margin-top: 5px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .footer-copy {
+        font-size: 12px;
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+}
+
+/*responsividad para la seccion promociones*/
+@media (max-width: 1000px) {
+   .container {
+        padding: 0 16px;
+      }
+
+      .promo-card {
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: row; /* Mantener imagen al costado */
+        height: auto;
+      }
+
+      .promo-card img {
+        width: 150px;
+        height: auto;
+      }
+
+}
