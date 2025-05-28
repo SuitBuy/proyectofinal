@@ -1,17 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Arbutus&family=Coda:wght@400;800&family=Cuprum:ital,wght@0,400..700;1,400..700&family=Fresca&family=Happy+Monkey&family=Meow+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Cuprum:ital,wght@0,400..700;1,400..700&family=Fresca&family=Happy+Monkey&display=swap');
 
+
+
+/* estilo de todo*/
+* {
+    box-sizing: border-box;
+}
+ 
+/*estilo del cuerpo*/
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 'Coda', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Cuprum', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     background-color: #fefefe;
     color: #222;
     overflow-x: hidden;
 }
 
-/*Estilos para el headeer y nav*/
-.encabezado {
+/*estilo para el header*/
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,9 +31,25 @@ body {
 
 .logo {
     height: 85px;
-    /*transform: translate(20px);*/
 }
 
+/* estilo para el menu hamburguesa*/
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+/*estilos del menu/ nav*/
 #menu {
     display: flex;
     justify-content: space-between;
@@ -45,6 +69,7 @@ body {
 }
 
 .nav-link {
+    font-size: 20px;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -59,23 +84,26 @@ body {
 
 .telefono {
     font-weight: bold;
-    font-family: "Coda";
-    font-size: 25px;
+    font-family: "Cuprum";
+    font-size: 30px;
     padding-left: 16px;
     margin-left: 16px;
     border-left: 2px solid white;
 }
 
-/* Botones */
+/* estilo para botones de reserva y orden */
 .reserva,
 .ordenar {
-    font-family: 'Coda';
+    font-family: 'Fresca';
     font-weight: bold;
+    font-size: 20px;
     background-color: #fcd200;
+    color:#0d0000;
     border: none;
     padding: 8px 16px;
     cursor: pointer;
     border-radius: 10px;
+    text-decoration: none;
 }
 
 .reserva:hover,
@@ -83,6 +111,7 @@ body {
     color: white;
     background-color: #121211;
 }
+
 
 
 /* MENÚ HAMBURGUESA */
@@ -204,6 +233,7 @@ footer {
     text-align: center;
 
 }
+
 /* Capa oscura con opacidad sin afectar el texto */
 .section-imagen .opacidad::before {
     content: '';
@@ -212,8 +242,10 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(175, 164, 164, 0.392); /* para la opacidad */
+    background-color: rgba(175, 164, 164, 0.392);
+    /* para la opacidad */
 }
+
 .section-text {
     position: relative;
     z-index: 1;
@@ -521,6 +553,7 @@ footer {
         font-size: 4vw;
     }
 }
+
 /*RESPONSIVIDAD para los valores y mision-vision */
 @media(max-width:768px) {
 

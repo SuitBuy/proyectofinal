@@ -3,7 +3,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 'Coda', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Cuprum', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     background-color: #e2ddcb;
     color: #222;
@@ -11,7 +11,7 @@ body {
 }
 
 /*Estilos para el headeer y nav*/
-.encabezado {
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,6 +45,7 @@ body {
 }
 
 .nav-link {
+    font-size: 20px;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -59,8 +60,8 @@ body {
 
 .telefono {
     font-weight: bold;
-    font-family: "Coda";
-    font-size: 25px;
+    font-family: "Cuprum";
+    font-size: 30px;
     padding-left: 16px;
     margin-left: 16px;
     border-left: 2px solid white;
@@ -69,13 +70,16 @@ body {
 /* Botones */
 .reserva,
 .ordenar {
-    font-family: 'Coda';
+    font-family: 'Fresca';
     font-weight: bold;
+    font-size: 20px;
     background-color: #fcd200;
+    color:#0d0000;
     border: none;
     padding: 8px 16px;
     cursor: pointer;
     border-radius: 10px;
+    text-decoration: none;
 }
 
 .reserva:hover,
