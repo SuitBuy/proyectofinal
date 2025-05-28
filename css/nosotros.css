@@ -233,7 +233,7 @@ footer {
 
 }
 
-/* Capa oscura con opacidad sin afectar el texto */
+
 .section-imagen .opacidad::before {
     content: '';
     position: absolute;
@@ -242,7 +242,6 @@ footer {
     right: 0;
     bottom: 0;
     background-color: rgba(175, 164, 164, 0.392);
-    /* para la opacidad */
 }
 
 .section-text {
@@ -311,9 +310,8 @@ footer {
 }
 
 .image-container img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
+    width: 450px;
+    height: 350px;
     border-radius: 15px;
     object-fit: cover;
 }
