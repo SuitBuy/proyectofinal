@@ -538,15 +538,15 @@ footer {
 
 /* responsividad para la imagen con opacidad*/
 @media (max-width: 768px) {
-    .hero {
+    .section-imagen {
         height: 300px;
     }
 
-    .hero-text h1 {
+    .section-text h1 {
         font-size: 8vw;
     }
 
-    .hero-text p {
+    .section-text p {
         font-size: 4vw;
     }
 }
@@ -590,6 +590,7 @@ footer {
     }
 }
 
+/*responsividad de mision y vision*/
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
