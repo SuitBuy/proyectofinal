@@ -38,52 +38,7 @@ function mostrarValores(n) {
   });
 }
 
-//seccion de te escuchamos
 
-document.getElementById('form').addEventListener('submit', function (e) {
-  e.preventDefault();
-
-  // Limpiar mensajes anteriores
-  const errores = {
-    nombre: '',
-    email: '',
-    mensaje: ''
-  };
-
-  const nombre = document.getElementById('nombre');
-  const email = document.getElementById('email');
-  const mensaje = document.getElementById('mensaje');
-
-  if (!nombre.value.trim()) {
-    errores.nombre = 'El nombre es obligatorio.';
-  }
-
-  if (!email.value.trim()) {
-    errores.email = 'El correo es obligatorio.';
-  } else if (!/\S+@\S+\.\S+/.test(email.value)) {
-    errores.email = 'Correo inválido.';
-  }
-
-  if (!mensaje.value.trim()) {
-    errores.mensaje = 'El mensaje no puede estar vacío.';
-  }
-
-  // Mostrar mensajes
-  document.getElementById('error-nombre').textContent = errores.nombre;
-  document.getElementById('error-email').textContent = errores.email;
-  document.getElementById('error-mensaje').textContent = errores.mensaje;
-
-  document.getElementById('error-nombre').style.display = errores.nombre ? 'block' : 'none';
-  document.getElementById('error-email').style.display = errores.email ? 'block' : 'none';
-  document.getElementById('error-mensaje').style.display = errores.mensaje ? 'block' : 'none';
-
-  // Si no hay errores, se podría enviar el formulario
-  if (!errores.nombre && !errores.email && !errores.mensaje) {
-    alert("Mensaje enviado correctamente.");
-    // Aquí puedes hacer un fetch o enviar el formulario
-    // this.submit();
-  }
-});
 
 
 

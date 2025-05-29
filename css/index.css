@@ -272,6 +272,8 @@ body {
     font-size: 16px;
 }
 
+
+
 /*FOOTER*/
 footer {
     font-family: 'Cuprum';
@@ -307,11 +309,12 @@ footer {
     display: flex;
     align-items: center;
     gap: 15px;
-    color: white;
+    color: rgb(251, 251, 251);
 }
 
 .social-icons {
     display: flex;
+    color: #fffdfb;
     gap: 20px;
     font-size: 30px;
 }
@@ -481,7 +484,6 @@ footer {
         text-align: center;
     }
 
-    
 
     /*responsividad para el footer*/
     footer {
