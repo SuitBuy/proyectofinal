@@ -58,6 +58,7 @@ body {
     margin-left: 24px;
 }
 
+
 .menu-izquierda,
 .menu-derecha {
     display: flex;
@@ -139,7 +140,6 @@ body {
 /*estilos de seccion bienvenida*/
 
 .bienvenida {
-    /*padding: 10px;*/
     background-color: #fff;
 }
 
@@ -148,11 +148,9 @@ body {
     justify-content: center;
     align-items: stretch;
     gap: 30px;
-    /*max-width: 1520px;*/
     margin: 0 auto;
     padding: 0 auto;
     flex-direction: row;
-    /*background-color: white;*/
     border-top: 4px solid white;
     border-bottom: 4px solid white;
 }
@@ -258,9 +256,7 @@ body {
 
 .local i {
     font-size: 30px;
-    /* Ajusta según lo que necesites */
     margin-right: 10px;
-    /* Espacio entre icono y texto */
 }
 
 .direccion {
@@ -274,7 +270,7 @@ body {
 
 
 
-/*FOOTER*/
+/* estilos del FOOTER*/
 footer {
     font-family: 'Cuprum';
     color: white;
@@ -373,7 +369,7 @@ footer {
         position: relative;
     }
 
-
+    /*responsividad del menu hamburguesa*/
     .menu-toggle {
         display: none;
         flex-direction: column;
@@ -398,6 +394,30 @@ footer {
         z-index: 1001;
     }
 
+    #menu.activo {
+        display: block;
+        position: absolute;
+        top: 80%;
+        width: 100%;
+        background-color: #670f0f;
+        text-align: center;
+        padding: 30px 0;
+        z-index: 1000;
+        margin-left: 0;
+    }
+
+    .menu-toggle.activo span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.activo span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.activo span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
     nav {
         display: none;
         position: absolute;
@@ -416,8 +436,6 @@ footer {
 
     nav.activo {
         display: flex;
-        background-color: #b70c0c;
-        /*color del menu desplegadp*/
         color: white;
         max-height: 500px;
     }
@@ -454,17 +472,6 @@ footer {
         margin-bottom: 10px;
     }
 
-    .menu-toggle.activo span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-
-    .menu-toggle.activo span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-toggle.activo span:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
-    }
 
     /*responsividad para banner*/
     .carrusel-img {

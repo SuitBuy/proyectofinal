@@ -449,13 +449,11 @@ footer {
         margin-top: 20px;
         transition: max-height 0.4s ease-in-out, background-color 0.3s ease;
         background-color: rgb(168, 27, 27);
-        /* Por defecto transparente */
     }
 
     nav.activo {
         display: flex;
         background-color: #b70c0c;
-        /*color del menu desplegado*/
         color: white;
         max-height: 500px;
     }
@@ -520,6 +518,8 @@ footer {
         right: 24px;
         z-index: 1001;
     }
+
+    
 
     .menu-toggle.activo span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);

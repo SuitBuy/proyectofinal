@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Arbutus&family=Coda:wght@400;800&family=Cuprum:ital,wght@0,400..700;1,400..700&family=Fresca&family=Happy+Monkey&family=Meow+Script&display=swap');
 
+
+
+/* estilo de todo*/
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -23,7 +30,22 @@ body {
 
 .logo {
     height: 85px;
-    /*transform: translate(20px);*/
+}
+
+/* estilo para el menu hamburguesa*/
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s ease;
 }
 
 #menu {
@@ -86,23 +108,6 @@ body {
 .ordenar:hover {
     color: white;
     background-color: #121211;
-}
-
-
-/* MENÚ HAMBURGUESA */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.menu-toggle span {
-    height: 3px;
-    width: 25px;
-    background: white;
-    border-radius: 2px;
-    transition: 0.3s ease;
 }
 
 
@@ -224,7 +229,7 @@ footer {
 }
 
 .ver-mas:hover {
-  background-color: #b71c1c;
+  background-color: #d7c21f;
 }
 
 .pdf-container {
@@ -251,6 +256,55 @@ footer {
         position: relative;
     }
 
+    /*responsividad del menu hamburguesa*/
+    .menu-toggle {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .menu-toggle span {
+        height: 3px;
+        width: 25px;
+        background: white;
+        border-radius: 2px;
+        transition: 0.3s ease;
+    }
+
+
+    .menu-toggle {
+        display: flex;
+        position: absolute;
+        top: 25px;
+        right: 24px;
+        z-index: 1001;
+    }
+
+    #menu.activo {
+        /*display: block;*/
+        position: absolute;
+        top: 80%;
+        width: 100%;
+        background-color: #670f0f;
+        text-align: center;
+        padding: 30px 0;
+        z-index: 1000;
+        margin-left: 0;
+    }
+
+    .menu-toggle.activo span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.activo span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.activo span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
     nav {
         display: none;
         position: absolute;
@@ -264,13 +318,10 @@ footer {
         margin-top: 20px;
         transition: max-height 0.4s ease-in-out, background-color 0.3s ease;
         background-color: rgb(168, 27, 27);
-        /* Por defecto transparente */
     }
 
     nav.activo {
-        display: flex;
-        background-color: #b70c0c;
-        /*color del menu desplegado*/
+        display: none;
         color: white;
         max-height: 500px;
     }
@@ -308,47 +359,6 @@ footer {
     }
 }
 
-/*responsividad para menu hamburguesa*/
-
-@media(max-width:768px) {
-
-    .menu-toggle {
-        display: none;
-        flex-direction: column;
-        gap: 5px;
-        cursor: pointer;
-    }
-
-    .menu-toggle span {
-        height: 3px;
-        width: 25px;
-        background: white;
-        border-radius: 2px;
-        transition: 0.3s ease;
-    }
-
-
-    .menu-toggle {
-        display: flex;
-        position: absolute;
-        top: 25px;
-        right: 24px;
-        z-index: 1001;
-    }
-
-    .menu-toggle.activo span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-
-    .menu-toggle.activo span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-toggle.activo span:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
-    }
-
-}
 
 /*responsividad para el footer*/
 
