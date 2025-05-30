@@ -14,15 +14,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //Para el banner 
 let indice = 0;
-    const imagenes = document.querySelectorAll(".carrusel-img");
+const imagenes = document.querySelectorAll(".carrusel-img");
 
-    function mostrarSiguienteImagen() {
-        imagenes[indice].classList.remove("activa");
-        indice = (indice + 1) % imagenes.length;
-        imagenes[indice].classList.add("activa");
-    }
-    imagenes[0].classList.add("activa");
-    setInterval(mostrarSiguienteImagen, 3000); 
+function mostrarSiguienteImagen() {
+  imagenes[indice].classList.remove("activa");
+  indice = (indice + 1) % imagenes.length;
+  imagenes[indice].classList.add("activa");
+}
+imagenes[0].classList.add("activa");
+setInterval(mostrarSiguienteImagen, 3000);
 
 
 //para nuestros valores 
@@ -112,10 +112,11 @@ function cargarHorarios() {
   });
 }
 
-document.getElementById("reservaForm").addEventListener("submit", function(e) {
+document.getElementById("reservaForm").addEventListener("submit", function (e) {
   e.preventDefault();
   alert("Reserva enviada con éxito.");
 });
 
-cambiarDia(0); // Inicializa con el día actual
+cambiarDia(0); 
+
 

@@ -1,0 +1,22 @@
+#productos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente si hay altura suficiente */
+  gap: 20px;               /* Espacio entre los productos (opcional) */
+  padding: 20px;
+}
+
+.producto {
+  flex: 1 1 300px; /* Se adapta con un mínimo de 300px */
+  max-width: 45%;  /* Máximo dos columnas */
+  box-sizing: border-box;
+}
+
+/* Opcional: para una sola columna en pantallas muy pequeñas */
+@media (max-width: 600px) {
+  .producto {
+    max-width: 100%;
+  }
+}
+
