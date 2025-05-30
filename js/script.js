@@ -40,7 +40,31 @@ function mostrarValores(n) {
 
 
 //para la seccion de comentarios
-const form = document.getElementById("form-comentarios");
+document.getElementById("form-comentarios").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const nombre = document.getElementById("nombre").value.trim();
+  const correo = document.getElementById("correo").value.trim();
+  const mensaje = document.getElementById("mensaje").value.trim();
+  const calificacion = document.querySelector('input[name="estrella"]:checked');
+
+  if (!nombre || !correo || !mensaje || !calificacion) {
+    alert("Por favor, completa todos los campos, incluyendo la calificación.");
+    return;
+  }
+
+  // Mostrar datos enviados (solo demostración)
+  alert(`¡Gracias por tu comentario!\n\nNombre: ${nombre}\nCorreo: ${correo}\nCalificación: ${calificacion.value} estrellas\nComentario: ${mensaje}`);
+
+  // Limpiar formulario
+  this.reset();
+});
+
+
+
+
+
+/*const form = document.getElementById("form-comentarios");
 const contenedorComentarios = document.getElementById("comentarios-container");
 let comentarios = [];
 let posicion = 0;
@@ -112,7 +136,7 @@ document.querySelector(".slider-next").addEventListener("click", () => {
     actualizarVista();
   }
 });
-
+*/
 
 
 
