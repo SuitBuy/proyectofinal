@@ -39,6 +39,84 @@ function mostrarValores(n) {
 }
 
 
+//para la seccion de comentarios
+const form = document.getElementById("form-comentarios");
+const contenedorComentarios = document.getElementById("comentarios-container");
+let comentarios = [];
+let posicion = 0;
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const nombre = document.getElementById("nombre").value.trim();
+  const correo = document.getElementById("correo").value.trim();
+  const mensaje = document.getElementById("mensaje").value.trim();
+  const calificacion = document.querySelector('input[name="estrella"]:checked');
+
+  if (!nombre || !correo || !mensaje || !calificacion) {
+    alert("Por favor, completa todos los campos, incluyendo la calificación.");
+    return;
+  }
+
+  // Guardamos el comentario
+  comentarios.push({
+    nombre: nombre,
+    estrellas: parseInt(calificacion.value),
+    mensaje: mensaje
+  });
+
+  form.reset();
+  mostrarComentarios();
+});
+
+// Renderizar comentarios (máx. 4 por vista)
+function mostrarComentarios() {
+  contenedorComentarios.innerHTML = "";
+
+  comentarios.forEach(comentario => {
+    const card = document.createElement("div");
+    card.className = "comentario-card";
+
+    const estrellasHtml = "★".repeat(comentario.estrellas) + "☆".repeat(5 - comentario.estrellas);
+
+    card.innerHTML = `
+      <h4>${comentario.nombre}</h4>
+      <div class="estrellas">${estrellasHtml}</div>
+      <p>${comentario.mensaje}</p>
+    `;
+    contenedorComentarios.appendChild(card);
+  });
+
+  actualizarVista();
+}
+
+function actualizarVista() {
+  const ancho = 270; // ancho aproximado de cada tarjeta + padding
+  const total = comentarios.length;
+  const offset = posicion * ancho * 4;
+  contenedorComentarios.style.transform = `translateX(-${offset}px)`;
+}
+
+// Botones de navegación
+document.querySelector(".slider-prev").addEventListener("click", () => {
+  if (posicion > 0) {
+    posicion--;
+    actualizarVista();
+  }
+});
+
+document.querySelector(".slider-next").addEventListener("click", () => {
+  const totalPages = Math.ceil(comentarios.length / 4);
+  if (posicion < totalPages - 1) {
+    posicion++;
+    actualizarVista();
+  }
+});
+
+
+
+
+
 
 
 
