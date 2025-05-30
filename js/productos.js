@@ -28,13 +28,22 @@ const productos = [
         id: 5,
         nombre: "REFRESCANTE",
         descripcion: "1 Pollo a la leña + crocantes papas fritas + 1 ensalada clásica + 1 gaseosa 1 1/2 Lt.",
+<<<<<<< HEAD
         precio: 68,
+=======
+        precio: 78.00,
+>>>>>>> 9d195d6996e2f836eba88c060850c604e50cf913
     },
     {
         id: 6,
         nombre: "PARA DOS PERSONAS",
+<<<<<<< HEAD
         descripcion: "1/2 Pollo a la leña + crocantes papas fritas + 1 ensalada clásica + 1 ensalada clasica + 2 gaseosas de 450 ml",
         precio: 64,
+=======
+        descripcion: "1/2 Pollo a la leña + crocantes papas fritas + 1 ensalada clásica + 1 ensalada clasica + 2 gaseosas de 450 ml o dos vasos de chicha.",
+        precio: 46.50,
+>>>>>>> 9d195d6996e2f836eba88c060850c604e50cf913
     }
 
 ]
