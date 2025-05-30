@@ -197,6 +197,11 @@ body {
     display: inline-block;
 }
 
+.btn-amarillo:hover {
+    color: white;
+    background-color: #b61f11;
+}
+
 .locales-section {
     background-color: #f6eee4;
     padding: 40px 20px;
@@ -268,7 +273,180 @@ body {
     font-size: 16px;
 }
 
+/* estilos para los comentarios*/
+.comentarios {
+    font-family: 'Cuprum';
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: #f6eee4;
+    gap: 30px;
+}
 
+.comentarios-info {
+    flex: 1 1 300px;
+    padding: 20px;
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.comentarios-info h2 {
+    font-size: 2em;
+    color: #b20e0e;
+}
+
+.comentarios-info p {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 10px;
+}
+
+.comentarios-formulario {
+    flex: 1 1 300px;
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comentarios-formulario label {
+    font-weight: bold;
+    color: #333;
+}
+
+.comentarios-formulario input,
+.comentarios-formulario textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.estrellas {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+.estrellas input {
+    display: none;
+}
+
+.estrellas label {
+    font-size: 2em;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.estrellas input:checked~label,
+.estrellas label:hover,
+.estrellas label:hover~label {
+    color: #f39c12;
+}
+
+.comentarios-formulario button {
+    background-color: #f9c74f;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-enviar {
+    width: 200px;
+    align-self: flex-start;
+    background-color: #f9c74f;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #f39c12;
+}
+
+/*estilos para que se muestren los comentarios*/
+.comentarios-usuarios {
+    margin-top: 60px;
+    text-align: center;
+    font-family: 'Fresca';
+}
+
+.comentarios-usuarios h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #c62808;
+}
+
+.comentarios-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.comentarios-container {
+    display: flex;
+    transition: transform 0.4s ease;
+    gap: 20px;
+    padding: 20px;
+}
+
+.comentario-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    flex-shrink: 0;
+    text-align: left;
+}
+
+.comentario-card h4 {
+    margin: 0;
+    color: #333;
+}
+
+.comentario-card .estrellas {
+    margin: 10px 0;
+}
+
+.comentario-card p {
+    color: #555;
+}
+
+.slider-prev,
+.slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f9c74f;
+    color: white;
+    border: none;
+    font-size: 2em;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slider-prev {
+    left: 10px;
+}
+
+.slider-next {
+    right: 10px;
+}
 
 /* estilos del FOOTER*/
 footer {
@@ -489,6 +667,13 @@ footer {
 
     .bienvenida-texto.derecha {
         text-align: center;
+    }
+
+    /*responsividad para los comentarios*/
+    @media (max-width: 768px) {
+        .comentarios {
+            flex-direction: column;
+        }
     }
 
 

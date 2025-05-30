@@ -24,7 +24,8 @@
             <span></span>
             <span></span>
         </div>
-
+        
+        <!--cod del menu-->
         <nav id="menu">
             <ul class="menu-izquierda">
                 <li><a href="carta.html" class="nav-link">NUESTRA CARTA</a></li>
@@ -69,6 +70,7 @@
         </div>
     </section>
 
+
     <section class="locales-section">
         <div class="locales-header">
             <h2><span class="label-local">LOCALES</span> <img src="./img/Logo.png" alt="Logo" /></h2>
@@ -109,7 +111,46 @@
     </section>
 
 
+    <section class="comentarios">
+        <div class="comentarios-info">
+            <h2>¡QUEREMOS ESCUCHARTE!</h2>
+            <p>Déjanos tu opinión, sugerencia o experiencia. Tu voz nos ayuda a mejorar cada día.</p>
+        </div>
 
+        <form id="form-comentarios" class="comentarios-formulario">
+            <label for="nombre">Nombres y Apellidos</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="calificacion">Calificación</label>
+            <div class="estrellas">
+                <input type="radio" name="estrella" id="estrella5" value="5"><label for="estrella5">&#9733;</label>
+                <input type="radio" name="estrella" id="estrella4" value="4"><label for="estrella4">&#9733;</label>
+                <input type="radio" name="estrella" id="estrella3" value="3"><label for="estrella3">&#9733;</label>
+                <input type="radio" name="estrella" id="estrella2" value="2"><label for="estrella2">&#9733;</label>
+                <input type="radio" name="estrella" id="estrella1" value="1"><label for="estrella1">&#9733;</label>
+            </div>
+
+            <label for="mensaje">Tu Comentario</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit" class="btn-enviar">ENVIAR</button>
+        </form>
+    </section>
+
+
+    <!--<section class="comentarios-usuarios">
+        <h3>Lo que dicen nuestros clientes</h3>
+        <div class="comentarios-slider">
+            <button class="slider-prev">&#10094;</button>
+            <div class="comentarios-container" id="comentarios-container">
+            </div>
+            <button class="slider-next">&#10095;</button>
+        </div>
+    </section>
+-->
 
     <footer>
         <div class="footer-top">
