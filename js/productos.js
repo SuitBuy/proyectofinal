@@ -28,13 +28,13 @@ const productos = [
         id: 5,
         nombre: "REFRESCANTE",
         descripcion: "1 Pollo a la leña + crocantes papas fritas + 1 ensalada clásica + 1 gaseosa 1 1/2 Lt.",
-        precio: 555555,
+        precio: 78.00,
     },
     {
         id: 6,
         nombre: "PARA DOS PERSONAS",
         descripcion: "1/2 Pollo a la leña + crocantes papas fritas + 1 ensalada clásica + 1 ensalada clasica + 2 gaseosas de 450 ml o dos vasos de chicha.",
-        precio: 666666,
+        precio: 46.50,
     }
 
 ]
