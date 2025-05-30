@@ -74,3 +74,8 @@ function revisarMensajeVacio() {
 
 }
 revisarMensajeVacio();
+
+function reiniciarCarrito(){
+
+  
+}
