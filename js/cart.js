@@ -4,6 +4,7 @@ const unidadesElment = document.getElementById("unidades");
 const precioElement = document.getElementById("precio");
 const carritoVacioElment = document.getElementById("carrito-vacio");
 const totalesElement = document.getElementById("totales");
+const reiniciarCarritoElement = document.getElementById("reinicar");
 
 
 function crearTarjetasProductosInicio() {
@@ -77,5 +78,5 @@ revisarMensajeVacio();
 
 function reiniciarCarrito(){
 
-  
+
 }
