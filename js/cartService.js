@@ -41,7 +41,6 @@ function getNuevoProfuctoParaMemoria(producto) {
     nuevoProducto.cantidad = 1;
     return nuevoProducto;
 }
-/*
 const cuentaCarritoElment = document.getElementById("cuenta-carrito");
 function actualizarNumeroCarrito() {
     const memoria = JSON.parse(localStorage.getItem("productos"));
@@ -49,6 +48,8 @@ function actualizarNumeroCarrito() {
         const cuenta = memoria.reduce((acum, current) => acum + current.cantidad, 0);
         cuentaCarritoElment.innerText = cuenta;
     } else {
+        cuentaCarritoElment.innerText = 0;
+
+    }
 }
 actualizarNumeroCarrito()
-*/

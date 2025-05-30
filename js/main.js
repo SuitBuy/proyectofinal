@@ -1,7 +1,7 @@
 
 const contenedorTarjetas = document.getElementById("productos-container");
 
-function crearTarjetasProductosInicio(productos){
+function crearTarjetasProductosInicio(productos) {
   productos.forEach(producto => {
     const nuevoProducto = document.createElement("div");
     nuevoProducto.classList = "tarjeta-producto";
