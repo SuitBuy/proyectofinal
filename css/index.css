@@ -93,7 +93,7 @@ body {
 /* estilo para botones de reserva y orden */
 .reserva,
 .ordenar {
-    
+
     font-family: 'Fresca';
     font-weight: bold;
     font-size: 20px;
@@ -201,6 +201,7 @@ body {
     color: white;
     background-color: #b61f11;
 }
+
 /* Estilos para locales*/
 .locales-section {
     background-color: #f6eee4;
@@ -716,6 +717,7 @@ footer {
     }
 
 }
+
 #cuenta-carrito {
     position: absolute;
     right: 20px;
@@ -729,6 +731,7 @@ footer {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
     min-width: 20px;
     text-align: center;
+    line-height: 1.2;
     z-index: 10;
 
 }
