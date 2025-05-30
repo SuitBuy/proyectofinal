@@ -76,6 +76,7 @@ body {
 /* Botones */
 .reserva,
 .ordenar {
+    
     font-family: 'Fresca';
     font-weight: bold;
     font-size: 20px;

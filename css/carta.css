@@ -418,3 +418,20 @@ footer {
     aspect-ratio: 3 / 5;
   }
 }
+#cuenta-carrito {
+    position: absolute;
+    right: 20px;
+    top: 35px;
+    background-color: #ff4d4f;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    min-width: 20px;
+    text-align: center;
+    line-height: 1.2;
+    z-index: 10;
+
+}
