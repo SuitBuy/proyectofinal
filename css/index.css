@@ -446,7 +446,7 @@ body {
     right: 10px;
 }
 
-/* estilos del FOOTER*/
+/* estilos del footer*/
 footer {
     font-family: 'Cuprum';
     color: white;
@@ -491,7 +491,7 @@ footer {
     font-size: 30px;
 }
 
-/* Parte inferior con columnas */
+/* Parte inferior del footer */
 .footer-bottom {
     font-family: 'Cuprum';
     display: flex;
