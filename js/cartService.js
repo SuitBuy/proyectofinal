@@ -49,7 +49,6 @@ function actualizarNumeroCarrito() {
         cuentaCarritoElment.innerText = cuenta;
     } else {
         cuentaCarritoElment.innerText = 0;
-
     }
 }
 actualizarNumeroCarrito()
