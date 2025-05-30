@@ -1,10 +1,10 @@
 const productos = [
     {
         id: 1,
-        nombre: "aa",
+        nombre: "MEGA FAMILIAR",
         img: "1.jpg",
-        descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        precio: 20,
+        descripcion: "1 Pollo a la leña + crocantes papas fritas + 1 ensalada clásica + 1/2 pollo solo.",
+        precio: 89.00,
     },
     {
         id: 2,
