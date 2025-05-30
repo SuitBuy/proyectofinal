@@ -225,6 +225,13 @@ body {
     align-items: center;
     gap: 8px;
     display: flex;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.promo-actions button:hover {
+    background: #b71d1d; /* tono más oscuro */
+    transform: translateY(-2px); /* pequeño levantamiento */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* sombra bonita */
 }
 
  .promo-actions button span {

@@ -10,9 +10,10 @@ function crearTarjetasProductosInicio(productos) {
                 <img src="./img/productos/${producto.id}.jpg" alt="imagen_producto" />
                 <div class="promo-content">
                     <p class="promo-titulo">${producto.nombre} <span class="promo-precio">S/${producto.precio}</span></p>
-                    <p class="promo-description">${producto.descripcion}</p>
+                    <div>
+                    <a class="promo-description">${producto.descripcion}</a>
+                    </div>
                     <div class="promo-actions">
-                        <a href="#">Ver términos y condiciones</a>
                         <button><span>ORDENAR</span><i class="fas fa-shopping-bag"></i></button>
                     </div>
                 </div>
