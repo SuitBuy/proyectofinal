@@ -4,13 +4,13 @@ const productos = [
         nombre: "aa",
         img: "1.jpg",
         descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        precio: 123123,
+        precio: 20,
     },
     {
         id: 2,
-        nombre: "aa",
+        nombre: "POLLITO",
         descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        precio: 222222,
+        precio: 30,
     },
     {
         id: 3,

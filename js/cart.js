@@ -4,11 +4,10 @@ const unidadesElment = document.getElementById("unidades");
 const precioElement = document.getElementById("precio");
 const carritoVacioElment = document.getElementById("carrito-vacio");
 const totalesElement = document.getElementById("totales");
-const reiniciarCarrito = document.getElementById("reiniciar-carrito");
 
 
 function crearTarjetasProductosInicio() {
-  contenedorTarjetas.innerHTML = ""; 
+  contenedorTarjetas.innerHTML = "";
   const productos = JSON.parse(localStorage.getItem("productos"));
   console.log(productos);
   if (productos && productos.length > 0) {
@@ -67,20 +66,11 @@ function actualizarTotales() {
 }
 
 
+
 function revisarMensajeVacio() {
   const productos = JSON.parse(localStorage.getItem("productos"));
-  console.log(productos,productos == true)
-  carritoVacioElment.classList.toggle("escondido",productos && productos.length > 0);
-  totalesElement.classList.toggle("escondido",!(productos && productos.length > 0));
+  carritoVacioElment.classList.toggle("escondido", productos && productos.length > 0);
+  totalesElement.classList.toggle("escondido", !(productos && productos.length > 0));
 
 }
 revisarMensajeVacio();
-
-reiniciarCarrito();
-
-reiniciarCarrito.addEventListener("click",reiniciarCarrito);
-function reiniciarCarrito() {
-  localStorage.removeItem("productos");
-  crearTarjetasProductosInicio();
-  actualizarTotales();
-}
